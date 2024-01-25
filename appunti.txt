@@ -1,0 +1,11 @@
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+
+X è il DataFrame contenente le caratteristiche che saranno utilizzate per addestrare il modello. In questo caso, X contiene due colonne: 'Combustibile' e 'Consumo specifico'.
+
+y è la variabile target o etichetta associata a ciascuna riga di X. In questo contesto, y rappresenta la colonna 'Settore' che si sta cercando di predire.
+
+train_test_split è una funzione che suddivide il dataset in un set di addestramento (X_train, y_train) e un set di test (X_test, y_test). Nel nostro caso, il 20% dei dati viene assegnato al test, mentre l'80% viene utilizzato per l'addestramento.
+
+random_state=42 assicura che la suddivisione dei dati sia riproducibile, il che è utile per scopi di debugging e ripetibilità.
+
+Quindi, X_train conterrà le caratteristiche delle righe utilizzate per addestrare il modello, e y_train conterrà le etichette associate a queste righe. Questi dati verranno utilizzati per insegnare al modello a fare previsioni accurate.
